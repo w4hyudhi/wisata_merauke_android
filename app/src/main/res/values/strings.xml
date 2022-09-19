@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wisata Merauke</string>
+    <string name="base_url">https://www.myurl.com</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

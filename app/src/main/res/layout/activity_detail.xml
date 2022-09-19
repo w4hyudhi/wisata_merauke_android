@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.detail.DetailActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_wisata"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="tps"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lampu_satu"
+            app:shapeAppearanceOverlay="@style/customRoundedImageView"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                tools:text="Pantai Lampu Satu"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/txt_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/subtitle"
+                android:drawableLeft="@drawable/ic_baseline_place_24"
+                android:drawablePadding="5dp"
+
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                tools:text="Jl. Menara Lampu Satu, Samkai, Kec. Merauke"
+                tools:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_jadwal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/subtitle"
+                android:drawableLeft="@drawable/ic_baseline_access_time_filled_24"
+                android:drawablePadding="5dp"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                tools:text="Setiap Hari"
+                tools:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/subtitle"
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+                android:drawablePadding="5dp"
+                android:maxLines="3"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                tools:text="Gratis"
+                tools:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="10dp"
+                android:background="#c2c0c0"></LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="Tentang"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_overview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="inherit"
+                android:layout_marginTop="5dp"
+              />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="10dp"
+                android:background="#c2c0c0"></LinearLayout>
+            <LinearLayout
+                android:id="@+id/txt_notfound1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="Fasilitas"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_fasilitas">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="10dp"
+                android:background="#c2c0c0"></LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/txt_notfound2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="UMKM"
+                android:textStyle="bold" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:id="@+id/rv_recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:listitem="@layout/item_fasilitas">
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_marginTop="10dp"
+                android:background="#c2c0c0"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/txt_notfound3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/title"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:text="Even"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rv_recycler3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:listitem="@layout/item_fasilitas">
+                </androidx.recyclerview.widget.RecyclerView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:layout_marginTop="10dp"
+                    android:background="#c2c0c0"></LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/title"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:text="Tempat"
+                android:textStyle="bold" />
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

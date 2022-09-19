@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "841318280335",
+    "project_id": "wisata-merauke-4b765",
+    "storage_bucket": "wisata-merauke-4b765.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841318280335:android:7c4cfda461be66d9fb54fa",
+        "android_client_info": {
+          "package_name": "com.merauke.wisatamerauke"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841318280335-usaug3lf0oef6l9q182tee85a9hdscok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGcf4uq4I5KG0RpduREMSKq1mRlcwD6gY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841318280335-usaug3lf0oef6l9q182tee85a9hdscok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
